@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f7f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffe6e6;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffddee;
+}
+
+main section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.Onas{
+    display: flex;
+    /* flex-direction: column-reverse; */
+}
+#home h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#home p {
+    margin-bottom: 20px;
+    /* width: 60%; */
+}
+button{
+
+    padding: 10px 20px;
+    background-color: #ffb3bb;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.product:hover ~ .product-grid{
+    margin-bottom: 5px;
+    background-color: #333;
+}
+#products button {
+    width: 90%;
+    padding: 10px 20px;
+    background-color: #ffb3bb;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff99aa;
+}
+
+#products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product:hover{
+    background-color:#ffddee;
+    transition: all .5s;
+}
+img{
+    border-radius: 15px;
+}
+.product{
+    transition: all .5s;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#products .product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#products .product h3 {
+    margin: 10px 0;
+    font-weight: 700;
+    height: 58px;
+}
+
+#products .product p {
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+#reviews .review-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#reviews blockquote {
+    padding: 10px 20px;
+    border-left: 5px solid #ffb3bb;
+    margin-bottom: 10px;
+}
+
+#reviews cite {
+    font-style: normal;
+    font-weight: 700;
+}
+
+#contact address {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe6e6;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+@media (width <= 800px) {
+    .Onas{
+        flex-direction: column-reverse;
+    }
+    
+}
