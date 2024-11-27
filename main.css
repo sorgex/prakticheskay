@@ -18,10 +18,12 @@ header {
     padding: 20px;
     background-color: #ffe6e6;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 nav ul {
     list-style: none;
+    display: flex;
 }
 
 nav ul li a {
@@ -54,7 +56,7 @@ main section {
     /* width: 60%; */
 }
 button{
-
+    margin-bottom: 10px;
     padding: 10px 20px;
     background-color: #ffb3bb;
     color: #333;
@@ -63,7 +65,7 @@ button{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.product:hover ~ .product-grid{
+.product:hover ~ button{
     margin-bottom: 5px;
     background-color: #333;
 }
@@ -147,7 +149,31 @@ footer {
     background-color: #ffe6e6;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
+
+.heart {
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    animation: beat 1.25s infinite alternate;
+    transform-origin: center;
+    padding-left: 5px;
+    /* margin-bottom: 100px; */
+    /* height: 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  @keyframes beat{
+    to { transform: scale(1.4); }
+  }
+
 @media (width <= 800px) {
+    nav ul {
+    list-style: none;
+    display: block;
+}
+    
     .Onas{
         flex-direction: column-reverse;
     }
